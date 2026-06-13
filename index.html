@@ -19,7 +19,8 @@
 body{
     font-family:'Poppins',sans-serif;
     background:linear-gradient(135deg,#fff7f3,#fde2e4);
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
     color:#444;
 }
 
@@ -28,10 +29,12 @@ body{
     width:100%;
     display:flex;
     flex-direction:column;
-    justify-content:center;
+    justify-content:flex-start;
     align-items:center;
     text-align:center;
     padding:30px;
+    padding-top:50px;
+    padding-bottom:80px;
 }
 
 h1{
@@ -99,7 +102,9 @@ h2{
     border-radius:20px;
     box-shadow:0 5px 20px rgba(0,0,0,.15);
 }
-
+.page p{
+    max-width:700px;
+}
 .heart{
     position:fixed;
     pointer-events:none;
@@ -145,13 +150,24 @@ h2{
         height:220px;
     }
 
-    .gallery img{
-        width:150px;
-        height:150px;
-    }
-
+    .gallery{
+    gap:10px;
 }
 
+.gallery img{
+    width:120px;
+    height:120px;
+}
+
+}
+html,
+body{
+    width:100%;
+    height:auto;
+    overflow-x:hidden;
+    overflow-y:auto;
+    -webkit-overflow-scrolling:touch;
+}
 </style>
 </head>
 
